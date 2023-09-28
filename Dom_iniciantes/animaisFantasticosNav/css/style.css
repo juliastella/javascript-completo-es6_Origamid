@@ -11,17 +11,9 @@ dl {
   padding: 0px;
 }
 
-html.textomaior {
-  font-size: 150%;
-}
-
 img {
   display: block;
   max-width: 100%;
-}
-
-.azul{
-  background: aquamarine;
 }
 
 ul {
@@ -224,5 +216,26 @@ body {
   }
   .copy {
     margin-bottom: 0px;
+  }
+}
+
+
+.js .js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show .5s forwards;
+}
+
+@keyframes show {
+  from{
+    opacity: 1;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
